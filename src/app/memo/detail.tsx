@@ -1,5 +1,6 @@
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import React from "react";
+import { FontAwesome } from "@expo/vector-icons";
 
 import Header from "../../components/Header";
 import CircleButton from "../../components/CircleButton";
@@ -15,7 +16,9 @@ const Detail = (): JSX.Element => {
       <ScrollView style={styles.memoBody}>
         <Text style={styles.memoBodyText}>買い物リスト お惣菜、シャンプー</Text>
       </ScrollView>
-      <CircleButton style={{ top: 165, bottom: "auto" }}>+</CircleButton>
+      <CircleButton style={{ top: 165, bottom: "auto" }}>
+        <FontAwesome name="plus" size={30} />
+      </CircleButton>
     </View>
   );
 };
