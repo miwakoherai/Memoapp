@@ -1,10 +1,10 @@
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import { FontAwesome } from "@expo/vector-icons";
 
 import Header from "../../components/Header";
 import MemoListItem from "../../components/MemoListItem";
 import CircleButton from "../../components/CircleButton";
+import Icon from "../../components/Icon";
 
 const List = (): JSX.Element => {
   return (
@@ -16,7 +16,7 @@ const List = (): JSX.Element => {
         <MemoListItem />
       </View>
       <CircleButton>
-        <FontAwesome name="plus" size={30} />
+        <Icon />
       </CircleButton>
     </View>
   );
