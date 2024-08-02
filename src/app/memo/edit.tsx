@@ -5,10 +5,14 @@ import {
   KeyboardAvoidingView,
 } from "react-native";
 import React from "react";
-
+import { router } from "expo-router";
 import Header from "../../components/Header";
 import CircleButton from "../../components/CircleButton";
 import Icon from "../../components/Icon";
+
+const handlePress = (): void => {
+  router.back();
+};
 
 const Edit = (): JSX.Element => {
   return (
@@ -23,7 +27,7 @@ const Edit = (): JSX.Element => {
         />
       </View>
 
-      <CircleButton>
+      <CircleButton onPress={handlePress}>
         <Icon name="check" size={40} color="#ffffff" />
       </CircleButton>
     </KeyboardAvoidingView>

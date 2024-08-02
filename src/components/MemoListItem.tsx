@@ -1,23 +1,27 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 
+import { Link } from "expo-router";
+
 import Icon from "./Icon";
 
-const memoListItem = (): JSX.Element => {
+const MemoListItem = (): JSX.Element => {
   return (
-    <View style={styles.memoListItem}>
-      <View>
-        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
-        <Text style={styles.memoListItemDate}>2023年10月1日 10:00</Text>
-      </View>
-      <TouchableOpacity>
-        <Icon name="delete" size={32} color="#B0B0B0" />
+    <Link href="/memo/detail" asChild>
+      <TouchableOpacity style={styles.MemoListItem}>
+        <View>
+          <Text style={styles.MemoListItemTitle}>買い物リスト</Text>
+          <Text style={styles.MemoListItemDate}>2023年10月1日 10:00</Text>
+        </View>
+        <TouchableOpacity>
+          <Icon name="delete" size={32} color="#B0B0B0" />
+        </TouchableOpacity>
       </TouchableOpacity>
-    </View>
+    </Link>
   );
 };
 const styles = StyleSheet.create({
-  memoListItem: {
+  MemoListItem: {
     backgroundColor: "#ffffff",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -27,15 +31,15 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderColor: "rgba(0,0,0,0.15)",
   },
-  memoListItemTitle: {
+  MemoListItemTitle: {
     fontSize: 16,
     lineHeight: 32,
   },
-  memoListItemDate: {
+  MemoListItemDate: {
     fontSize: 12,
     lineHeight: 16,
     color: "#848484",
   },
 });
 
-export default memoListItem;
+export default MemoListItem;
