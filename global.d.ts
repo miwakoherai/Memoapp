@@ -1,5 +1,5 @@
 declare module 'expo-router' {
     // 必要な型宣言をここに追加します。ここでは一般的な型を使用しています。
-    const Router: unknown;
-    export { Router }
+    const router: unknown;
+    export { router }
 }

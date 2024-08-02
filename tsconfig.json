@@ -2,6 +2,8 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "jsx": "react-native",
+    "moduleResolution": "node",
     "typeRoots": [
       "./node_modules/@types",
       "./global.d.ts"
@@ -11,5 +13,8 @@
   "include": [
     "src/**/*",
     "global.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
