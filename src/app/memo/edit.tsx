@@ -6,7 +6,6 @@ import {
 } from "react-native";
 import React from "react";
 import { router } from "expo-router";
-import Header from "../../components/Header";
 import CircleButton from "../../components/CircleButton";
 import Icon from "../../components/Icon";
 
@@ -17,7 +16,6 @@ const handlePress = (): void => {
 const Edit = (): JSX.Element => {
   return (
     <KeyboardAvoidingView behavior="height" style={styles.container}>
-      <Header />
       <View style={styles.inputContainer}>
         <TextInput
           placeholder="Enter text here"

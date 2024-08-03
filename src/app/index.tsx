@@ -1,4 +1,4 @@
-import { Redirect } from "expo-router";
+import { Redirect } from "expo-router/build/exports";
 import React from "react";
 
 const Index = (): JSX.Element => {

@@ -7,7 +7,6 @@ import {
 } from "react-native";
 import React from "react";
 import { Link, router } from "expo-router";
-import Header from "../../components/Header";
 import Button from "../../components/Button";
 
 const handlePress = (): void => {
@@ -18,7 +17,6 @@ const handlePress = (): void => {
 const SignUP = (): JSX.Element => {
   return (
     <View style={styles.container}>
-      <Header />
       <View style={styles.inner}>
         <Text style={styles.title}>Sign UP</Text>
         <TextInput style={styles.input} value="Email address" />
